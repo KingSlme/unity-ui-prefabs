@@ -13,7 +13,7 @@ public static class UITemplates
         return newFillAmount;
     }
 
-    public static Color LerpColor(float currentValueNormalized, params Color32[] colors)
+    public static Color32 LerpColor(float currentValueNormalized, params Color32[] colors)
     {
         if (colors.Length < 2)
             return Color.Lerp(Color.red, Color.green, currentValueNormalized);
